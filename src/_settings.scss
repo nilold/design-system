@@ -89,10 +89,10 @@ $light: $brand-white;
 $dark: $brand-black;
 
 // Set default bootstrap variables to initial, since we won't be using them
-$indigo:  initial;
-$yellow:  initial;
-$teal:    initial;
-$cyan:    initial;
+$indigo: initial;
+$yellow: initial;
+$teal: initial;
+$cyan: initial;
 
 $colors: ();
 
@@ -103,49 +103,41 @@ $colors: map-merge(
       "blue": $brand-blue,
       "blue-dark": $brand-blue-dark,
       "blue-darker": $brand-blue-darker,
-
       "green-lighter": $brand-green-lighter,
       "green-light": $brand-green-light,
       "green": $brand-green,
       "green-dark": $brand-green-dark,
       "green-darker": $brand-green-darker,
-
       "brown-lighter": $brand-brown-lighter,
       "brown-light": $brand-brown-light,
       "brown": $brand-brown,
       "brown-dark": $brand-brown,
       "brown-darker": $brand-brown-darker,
-
       "orange-lighter": $brand-orange-lighter,
       "orange-light": $brand-orange-light,
       "orange": $brand-orange,
       "orange-dark": $brand-orange-dark,
       "orange-darker": $brand-orange-darker,
-
       "red-lighter": $brand-red-lighter,
       "red-light": $brand-red-light,
       "red": $brand-red,
       "red-dark": $brand-red-dark,
       "red-darker": $brand-red-darker,
-
       "pink-lighter": $brand-pink-lighter,
       "pink-light": $brand-pink-light,
       "pink": $brand-pink,
       "pink-dark": $brand-pink-dark,
       "pink-darker": $brand-pink-darker,
-
       "purple-lighter": $brand-purple-lighter,
       "purple-light": $brand-purple-light,
       "purple": $brand-purple,
       "purple-dark": $brand-purple-dark,
       "purple-darker": $brand-purple-darker,
-
       "gray-lighter": $brand-gray-lighter,
       "gray-light": $brand-gray-light,
       "gray": $brand-gray,
       "gray-dark": $brand-gray-dark,
       "gray-darker": $brand-gray-darker,
-
       "white": $brand-white,
       "black": $brand-black
     ),
@@ -168,36 +160,27 @@ $spacers: map-merge((
   6: ($spacer * 8) // 64px
 ), $spacers);
 
-$spacing-0: map-get($spacers, 0);
-$spacing-1: map-get($spacers, 1);
-$spacing-2: map-get($spacers, 2);
-$spacing-3: map-get($spacers, 3);
-$spacing-4: map-get($spacers, 4);
-$spacing-5: map-get($spacers, 5);
-$spacing-6: map-get($spacers, 6);
-
-
 // Grid columns
 //
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns: 8;
-$grid-gutter-width: $spacing-4;
+$grid-gutter-width: map-get($spacers, 4);
 
 // Components
 //
 // Define common padding and border radius sizes and more.
 
-$border-radius:     $spacing-2;
-$border-radius-lg:  $spacing-3;
-$border-radius-sm:  $spacing-1;
+$border-radius: map-get($spacers, 2);
+$border-radius-lg: map-get($spacers, 3);
+$border-radius-sm: map-get($spacers, 1);
 
 // Buttons + Forms
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y-sm:  $spacing-3;
-$input-btn-padding-x-sm:  $spacing-4;
+$input-btn-padding-y-sm: map-get($spacers, 3);
+$input-btn-padding-x-sm: map-get($spacers, 4);
 
 // Types
 
@@ -206,12 +189,16 @@ $font-family-sans-serif: "Overpass", -apple-system, BlinkMacSystemFont, "Segoe U
 
 $font-size-base: 1rem;
 
-$h1-font-size:                $font-size-base * 2.5; // 40px
-$h2-font-size:                $font-size-base * 2; // 32px
-$h3-font-size:                $font-size-base * 1.625; // 26px
-$h4-font-size:                $font-size-base * 1.375; // 22px
-$h5-font-size:                $font-size-base * 1.25; // 20px
-$h6-font-size:                $font-size-base; // 16px
+$h1-font-size: $font-size-base * 2.5; // 40px
+$h2-font-size: $font-size-base * 2; // 32px
+$h3-font-size: $font-size-base * 1.625; // 26px
+$h4-font-size: $font-size-base * 1.375; // 22px
+$h5-font-size: $font-size-base * 1.25; // 20px
+$h6-font-size: $font-size-base; // 16px
 
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-weight-black: 900;
 
 // BRAND SPECIFIC CODE --------------------------------------
