@@ -1,0 +1,21 @@
+.btn {
+  border-radius: 25px;
+  padding: $spacing-3 $spacing-5;
+
+  &:disabled{
+    opacity: 0.25;
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    border: 2px solid map-get($theme-colors, $color);
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-outline-#{$color} {
+    border: 2px solid map-get($theme-colors, $color);
+
+  }
+}

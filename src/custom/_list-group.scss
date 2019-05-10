@@ -1,0 +1,25 @@
+.list-group-item {
+  padding: $spacer 1.25rem;
+  border: none;
+  background: none;
+
+  &.gray {
+    * {
+      color: map_get($colors, "gray");
+    }
+    &:hover{
+      background-color: map_get($colors, "gray-darker");
+      * {
+        stroke: map_get($colors, "white");;
+        color: map_get($colors, "white");
+        text-decoration: none;
+      }
+    }
+  }
+
+  &:hover{
+    color: map_get($colors, "gray");
+  }
+}
+
+

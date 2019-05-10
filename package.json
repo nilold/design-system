@@ -1,0 +1,9 @@
+{
+  "name": "@ac-design/design-system",
+  "private": true,
+  "main": "src/index.scss",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
