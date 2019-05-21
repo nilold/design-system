@@ -1,0 +1,10 @@
+@import "../base";
+
+.dropdown-item:hover{
+  background-color: $brand-gray-dark;
+  color: $white;
+}
+
+.dropdown-divider {
+  border-top: 1px solid $brand-gray-darker;
+}

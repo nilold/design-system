@@ -1,0 +1,13 @@
+@import "../base";
+
+//
+// Horizontal rules
+//
+
+hr {
+  margin-top: $spacer;
+  margin-bottom: $spacer;
+  border: 0;
+  border-top: map-get($spacers, 2) solid $hr-border-color;
+  border-radius: map-get($spacers, 1);
+}

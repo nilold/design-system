@@ -1,0 +1,53 @@
+@import "../base";
+
+.nav-tabs {
+  border: transparent;
+
+  .nav-item {
+    margin-bottom: map-get($spacers, 1);
+  }
+
+  .nav-link {
+    color: #aebbbe;
+    border: transparent;
+    padding-left: 0;
+    padding-right: 0;
+
+    &:hover {
+      color: darken(#aebbbe, 10%);
+
+      &:after {
+        background-color: darken($success, 10%);
+      }
+    }
+
+    &.disabled {
+      color: $text-muted;
+      background-color: transparent;
+      border-color: transparent;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    color: $success;
+    background-color: transparent;
+    border-color: transparent;
+
+    &:after {
+      display: block;
+      content: "";
+      width: 100%;
+      height: map-get($spacers, 2);
+      border-radius: map-get($spacers, 1);
+      background-color: $success;
+      box-sizing: border-box;
+      position: relative;
+      bottom: -($spacer * 2.25);
+    }
+  }
+}
