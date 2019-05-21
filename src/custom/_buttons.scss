@@ -1,21 +1,43 @@
+@import "../base";
+
+//
+// Base styles
+//
+
 .btn {
-  border-radius: 25px;
-  padding: $spacing-3 $spacing-5;
+  border-radius: ($spacer * 3);
+  padding: map-get($spacers, 3) map-get($spacers, 5);
+  border-width: map-get($spacers, 1);
 
   &:disabled{
     opacity: 0.25;
   }
 }
 
+
+//
+// Alternate buttons
+//
+
+.btn-sm{
+  border-radius: map-get($spacers, 4);
+  padding: map-get($spacers, 2) map-get($spacers, 4);
+}
+
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
-    border: 2px solid map-get($theme-colors, $color);
+    @include button-variant($value, $value);
   }
 }
 
 @each $color, $value in $theme-colors {
   .btn-outline-#{$color} {
-    border: 2px solid map-get($theme-colors, $color);
-
+    @include button-outline-variant($value);
   }
+}
+
+.btn-plain{
+  color: $dark;
+  background-color: transparent;
+  border-color: $dark;
 }

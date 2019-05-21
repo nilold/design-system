@@ -1,5 +1,5 @@
-$navbar-height: $spacer * 5;
+@import "../base";
 
 .navbar {
-  height: $navbar-height;
+  height: $spacer * 5;
 }
