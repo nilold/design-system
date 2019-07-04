@@ -1,4 +1,5 @@
 @import "../base";
+@import "~bootstrap/scss/utilities";
 
 @each $color, $value in $colors {
   @if type-of($value) == 'color' {

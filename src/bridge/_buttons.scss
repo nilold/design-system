@@ -14,14 +14,19 @@
   }
 }
 
-
-//
-// Alternate buttons
-//
-
-.btn-sm{
+.btn-sm {
   border-radius: map-get($spacers, 4);
   padding: map-get($spacers, 2) map-get($spacers, 4);
+}
+
+
+.btn-plain {
+  &,
+  &:disabled {
+    color: $dark;
+    background-color: transparent;
+    border-color: $dark;
+  }
 }
 
 @each $color, $value in $theme-colors {
@@ -36,8 +41,3 @@
   }
 }
 
-.btn-plain{
-  color: $dark;
-  background-color: transparent;
-  border-color: $dark;
-}

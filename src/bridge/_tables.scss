@@ -1,0 +1,24 @@
+@import "../base";
+
+.table {
+  font-size: $spacer * 1.75;
+}
+
+.table-bordered {
+  thead {
+    th,
+    td {
+      border-bottom-width: $table-border-width;
+    }
+  }
+}
+
+.table-hover {
+  tbody {
+    tr {
+      transition: background-color 400ms linear;
+    }
+  }
+}
+
+
