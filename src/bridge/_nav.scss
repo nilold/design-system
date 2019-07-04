@@ -3,19 +3,29 @@
 .nav-tabs {
   border: transparent;
 
+  .current-segment {
+    height: map-get($spacers, 2);
+    bottom: -($spacer * 2.5);
+    border-radius: map-get($spacers, 1);
+    background: $green;
+    position: absolute;
+    transition: transform 400ms;
+  }
+
   .nav-item {
     margin-bottom: map-get($spacers, 1);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
   }
 
   .nav-link {
-    color: #aebbbe;
+    color: $brand-gray-light;
     border: transparent;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
 
-    &:hover {
-      color: darken(#aebbbe, 10%);
-
+    &:hover{
+      color: darken($brand-gray-light, 10%);
       &:after {
         background-color: darken($success, 10%);
       }
@@ -25,7 +35,6 @@
       color: $text-muted;
       background-color: transparent;
       border-color: transparent;
-
       &:after {
         display: none;
       }
@@ -37,17 +46,5 @@
     color: $success;
     background-color: transparent;
     border-color: transparent;
-
-    &:after {
-      display: block;
-      content: "";
-      width: 100%;
-      height: map-get($spacers, 2);
-      border-radius: map-get($spacers, 1);
-      background-color: $success;
-      box-sizing: border-box;
-      position: relative;
-      bottom: -($spacer * 2.25);
-    }
   }
 }
