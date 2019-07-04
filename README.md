@@ -16,6 +16,10 @@ A SCSS design system based on Bootstrap, to provide styling and theming to all A
         - `@import "~@ac-ui/design-system/src/bridge/grid";`
     - Want to load everything? Please reconsider.
         - `@import "~@ac-ui/design-system/src";`
+3. How about just the styles needed to make the page pretty?
+    - Its hard to say for sure just what you'll need on a page, so `@ac-ui` provides some utility classes and general stylings
+    - `@import "~@ac-ui/design-system/src/page";`
+
 
 # Overview
 - `src/index.scss` -> Entry file into all utility files/classes
