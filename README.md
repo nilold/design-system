@@ -3,8 +3,10 @@
 A SCSS design system based on Bootstrap, to provide styling and theming to all Avenue Code products
 
 # TODO
-1. Add editor config files
-2. Add linting config files
+1. Set variables to all be `!default` to inherit any product overrides
+2. Add editor config files
+3. Add linting config files
+4. Lint staged
 
 # Installation
 1. Install as a npm dependency `npm i git+ssh://git@gitlab.com:acbr/internal/ac-ui/design-system.git`
@@ -20,9 +22,14 @@ A SCSS design system based on Bootstrap, to provide styling and theming to all A
     - Its hard to say for sure just what you'll need on a page, so `@ac-ui` provides some utility classes and general stylings
     - `@import "~@ac-ui/design-system/src/page";`
 
+# How do variables get determined?
+- All variables should be declared in the `src/base/_theme.scss` file
+- When imported in to a Product, Product variables cascade into Theme Variables
+- Theme variables cascade into Bootstrap variables
 
 # Overview
-- `src/index.scss` -> Entry file into all utility files/classes
-- `src/_variables.scss` -> Baseline theme variables. Product implementation can override.
+- `src/index` -> Entry file into all component, helper, and utility styles
+- `src/page` -> Baseline page style, contains css reset, and utility classes
+- `src/base/theme` -> Baseline theme variables. Product implementation can override.
 - `src/bridge/${FILE_NAME}` -> Act as a bridge file to Bootstrap, add pertinent styles
     - Each bridge file loads AC-UI Variables, and has access to all Mixins/Functions/Variables

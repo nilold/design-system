@@ -1,7 +1,5 @@
-@import "~bootstrap/scss/functions";
-@import "variables";
-@import "~bootstrap/scss/mixins";
-
+@import "base";
 @import "reset";
 @import "bridge/root";
 @import "bridge/reboot";
+@import "bridge/utilities";
