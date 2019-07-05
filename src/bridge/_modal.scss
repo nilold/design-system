@@ -1,4 +1,5 @@
 @import "../base";
+@import "~bootstrap/scss/modal";
 
 .modal-content {
   max-height: calc(100vh - (0.5rem * 2));
