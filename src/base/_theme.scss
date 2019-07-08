@@ -10,88 +10,88 @@
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
 
-$white: #ffffff;
-$brand-white: #ffffff;
+$white: #ffffff !default;
+$brand-white: #ffffff !default;
 
-$black: #232627;
-$brand-black: #232627;
+$black: #232627 !default;
+$brand-black: #232627 !default;
 
-$blue: #0095f4;
+$blue: #0095f4 !default;
 
-$brand-blue-lighter: #a4c8ff;
-$brand-blue-light: #68aeff;
-$brand-blue: #0095f4;
-$brand-blue-dark: #007bca;
-$brand-blue-darker: #0061a2;
+$brand-blue-lighter: #a4c8ff !default;
+$brand-blue-light: #68aeff !default;
+$brand-blue: #0095f4 !default;
+$brand-blue-dark: #007bca !default;
+$brand-blue-darker: #0061a2 !default;
 
-$green: #37c18d;
+$green: #37c18d !default;
 
-$brand-green-lighter: #b5efd3;
-$brand-green-light: #66dbaa;
-$brand-green: #37c18d;
-$brand-green-dark: #2da377;
-$brand-green-darker: #238661;
+$brand-green-lighter: #b5efd3 !default;
+$brand-green-light: #66dbaa !default;
+$brand-green: #37c18d !default;
+$brand-green-dark: #2da377 !default;
+$brand-green-darker: #238661 !default;
 
-$brand-brown-lighter: #e1c1a5;
-$brand-brown-light: #c9a484;
-$brand-brown: #aa8b6f;
-$brand-brown-dark: #8c725b;
-$brand-brown-darker: #705447;
+$brand-brown-lighter: #e1c1a5 !default;
+$brand-brown-light: #c9a484 !default;
+$brand-brown: #aa8b6f !default;
+$brand-brown-dark: #8c725b !default;
+$brand-brown-darker: #705447 !default;
 
-$orange: #f5aa38;
+$orange: #f5aa38 !default;
 
-$brand-orange-lighter: #fccc9e;
-$brand-orange-light: #fbba6f;
-$brand-orange: #f5aa38;
-$brand-orange-dark: #e39d33;
-$brand-orange-darker: #d2912f;
+$brand-orange-lighter: #fccc9e !default;
+$brand-orange-light: #fbba6f !default;
+$brand-orange: #f5aa38 !default;
+$brand-orange-dark: #e39d33 !default;
+$brand-orange-darker: #d2912f !default;
 
-$red: #ff5166;
+$red: #ff5166 !default;
 
-$brand-red-lighter: #ffb2b8;
-$brand-red-light: #ff8792;
-$brand-red: #ff5166;
-$brand-red-dark: #ed003d;
-$brand-red-darker: #bf002f;
+$brand-red-lighter: #ffb2b8 !default;
+$brand-red-light: #ff8792 !default;
+$brand-red: #ff5166 !default;
+$brand-red-dark: #ed003d !default;
+$brand-red-darker: #bf002f !default;
 
-$pink: #ff61c9;
+$pink: #ff61c9 !default;
 
-$brand-pink-lighter: #ffb2df;
-$brand-pink-light: #ff82d3;
-$brand-pink: #ff61c9;
-$brand-pink-dark: #fe00c0;
-$brand-pink-darker: #da00a4;
+$brand-pink-lighter: #ffb2df !default;
+$brand-pink-light: #ff82d3 !default;
+$brand-pink: #ff61c9 !default;
+$brand-pink-dark: #fe00c0 !default;
+$brand-pink-darker: #da00a4 !default;
 
-$purple: #8170ff;
+$purple: #8170ff !default;
 
-$brand-purple-lighter: #d5bbff;
-$brand-purple-light: #c297ff;
-$brand-purple: #8170ff;
-$brand-purple-dark: #a23eff;
-$brand-purple-darker: #8c00e6;
+$brand-purple-lighter: #d5bbff !default;
+$brand-purple-light: #c297ff !default;
+$brand-purple: #8170ff !default;
+$brand-purple-dark: #a23eff !default;
+$brand-purple-darker: #8c00e6 !default;
 
-$brand-gray-lighter: #dae4e6;
-$brand-gray-light: #aebbbe;
-$brand-gray: #889395;
-$brand-gray-dark: #646c6e;
-$brand-gray-darker: #424849;
+$brand-gray-lighter: #dae4e6 !default;
+$brand-gray-light: #aebbbe !default;
+$brand-gray: #889395 !default;
+$brand-gray-dark: #646c6e !default;
+$brand-gray-darker: #424849 !default;
 
-$primary: $brand-blue;
-$secondary: $brand-gray-light;
-$success: $brand-green;
-$info: $brand-gray;
-$warning: $brand-orange;
-$danger: $brand-red;
-$light: $brand-white;
-$dark: $brand-black;
+$primary: $brand-blue !default;
+$secondary: $brand-gray-light !default;
+$success: $brand-green !default;
+$info: $brand-gray !default;
+$warning: $brand-orange !default;
+$danger: $brand-red !default;
+$light: $brand-white !default;
+$dark: $brand-black !default;
 
 // Set default bootstrap variables to initial, since we won't be using them
-$indigo: initial;
-$yellow: initial;
-$teal: initial;
-$cyan: initial;
+$indigo: initial !default;
+$yellow: initial !default;
+$teal: initial !default;
+$cyan: initial !default;
 
-$colors: ();
+$colors: () !default;
 
 $colors: map-merge((
   "blue-lighter": $brand-blue-lighter,
@@ -136,11 +136,11 @@ $colors: map-merge((
   "gray-darker": $brand-gray-darker,
   "white": $brand-white,
   "black": $brand-black
-), $colors);
+), $colors) !default;
 
 
 // This variable affects the `.h-*` and `.w-*` classes.
-$sizes: ();
+$sizes: () !default;
 $sizes: map-merge((
   10: 10%,
   15: 15%,
@@ -150,14 +150,14 @@ $sizes: map-merge((
   75: 75%,
   100: 100%,
   auto: auto
-), $sizes);
+), $sizes) !default;
 
 //
 // Spacing
 //
 
-$spacer: 0.5rem; // 8px
-$spacers: ();
+$spacer: 0.5rem !default; // 8px
+$spacers: () !default;
 $spacers: map-merge((
   0: 0,
   1: ($spacer * .25), // 2px
@@ -166,58 +166,58 @@ $spacers: map-merge((
   4: ($spacer * 2), // 16px
   5: ($spacer * 4), // 32px
   6: ($spacer * 8) // 64px
-), $spacers);
+), $spacers) !default;
 
 // Grid columns
 //
 // Set the number of columns and specify the width of the gutters.
 
-$grid-columns: 8;
-$grid-gutter-width: map-get($spacers, 4);
+$grid-columns: 8 !default;
+$grid-gutter-width: map-get($spacers, 4) !default;
 
 // Components
 //
 // Define common padding and border radius sizes and more.
 
-$border-radius: map-get($spacers, 2);
-$border-radius-lg: map-get($spacers, 3);
-$border-radius-sm: map-get($spacers, 1);
+$border-radius: map-get($spacers, 2) !default;
+$border-radius-lg: map-get($spacers, 3) !default;
+$border-radius-sm: map-get($spacers, 1) !default;
 
 // Tables
 //
 // Customizes the `.table` component with basic values, each used across all table variations.
-$table-accent-bg: rgba($black, .05);
-$table-hover-bg: rgba($black, .05);
+$table-accent-bg: rgba($black, .05) !default;
+$table-hover-bg: rgba($black, .05) !default;
 
 // Buttons + Forms
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
-$input-btn-padding-y-sm: map-get($spacers, 3);
-$input-btn-padding-x-sm: map-get($spacers, 4);
+$input-btn-padding-y-sm: map-get($spacers, 3) !default;
+$input-btn-padding-x-sm: map-get($spacers, 4) !default;
 
 
 // Dropdown menu
-$dropdown-bg: $black;
-$dropdown-link-color: $white;
+$dropdown-bg: $black !default;
+$dropdown-link-color: $white !default;
 
 // Types
 
 $font-family-sans-serif: "Overpass", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-"Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-$font-family-base: $font-family-sans-serif;
+"Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base: $font-family-sans-serif !default;
 
-$font-size-base: 1rem;
+$font-size-base: 1rem !default;
 
-$h1-font-size: $font-size-base * 2.5; // 40px
-$h2-font-size: $font-size-base * 2; // 32px
-$h3-font-size: $font-size-base * 1.625; // 26px
-$h4-font-size: $font-size-base * 1.375; // 22px
-$h5-font-size: $font-size-base * 1.25; // 20px
-$h6-font-size: $font-size-base; // 16px
+$h1-font-size: $font-size-base * 2.5 !default; // 40px
+$h2-font-size: $font-size-base * 2 !default; // 32px
+$h3-font-size: $font-size-base * 1.625 !default; // 26px
+$h4-font-size: $font-size-base * 1.375 !default; // 22px
+$h5-font-size: $font-size-base * 1.25 !default; // 20px
+$h6-font-size: $font-size-base !default; // 16px
 
-$font-weight-extra-light: 200;
-$font-weight-light: 300;
-$font-weight-normal: 400;
-$font-weight-bold: 700;
-$font-weight-black: 900;
+$font-weight-extra-light: 200 !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-black: 900 !default;
