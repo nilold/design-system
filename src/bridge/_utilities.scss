@@ -1,4 +1,4 @@
-@import "../base/index";
+@import "../base";
 @import "~bootstrap/scss/utilities";
 
 @each $color, $value in $colors {
