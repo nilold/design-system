@@ -91,8 +91,9 @@ $yellow: initial !default;
 $teal: initial !default;
 $cyan: initial !default;
 
+// Theming colors
+// @ac-ui/design-system: map-merge(map, $colors) must not be defaulted, this allows cascading
 $colors: () !default;
-
 $colors: map-merge((
   "blue-lighter": $brand-blue-lighter,
   "blue-light": $brand-blue-light,
@@ -136,10 +137,10 @@ $colors: map-merge((
   "gray-darker": $brand-gray-darker,
   "white": $brand-white,
   "black": $brand-black
-), $colors) !default;
-
+), $colors);
 
 // This variable affects the `.h-*` and `.w-*` classes.
+// @ac-ui/design-system: map-merge(map, $sizes) must not be defaulted, this allows cascading
 $sizes: () !default;
 $sizes: map-merge((
   10: 10%,
@@ -150,12 +151,12 @@ $sizes: map-merge((
   75: 75%,
   100: 100%,
   auto: auto
-), $sizes) !default;
+), $sizes);
 
 //
 // Spacing
+// @ac-ui/design-system: map-merge(map, $spacers) must not be defaulted, this allows cascading
 //
-
 $spacer: 0.5rem !default; // 8px
 $spacers: () !default;
 $spacers: map-merge((
@@ -166,7 +167,7 @@ $spacers: map-merge((
   4: ($spacer * 2), // 16px
   5: ($spacer * 4), // 32px
   6: ($spacer * 8) // 64px
-), $spacers) !default;
+), $spacers);
 
 // Grid columns
 //
