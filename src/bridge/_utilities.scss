@@ -1,6 +1,15 @@
 @import "../base";
 @import "~bootstrap/scss/utilities";
 
+// @ac-ui/design-system: Ranges from 1-5
+//                       (base font size is 4)
+
+@each $number, $size in $font-sizes {
+  .font-size-#{$number} {
+    font-size: $size !important;
+  }
+}
+
 @each $color, $value in $colors {
   @if type-of($value) == 'color' {
     @include bg-variant(".bg-#{$color}", $value);
