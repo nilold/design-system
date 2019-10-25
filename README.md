@@ -9,7 +9,7 @@ A SCSS design system based on Bootstrap, to provide styling and theming to all A
 4. Lint staged
 
 # Installation
-1. Install as a npm dependency `npm i git+ssh://git@gitlab.com:acbr/internal/ac-ui/design-system.git`
+1. Install as a npm dependency `npm i @ac-ui/design-system.git`
 2. Use within your SCSS 
     - Want settings, mixins, extends, with no classes? 
         - `@import "~@ac-ui/design-system/src/base";`
