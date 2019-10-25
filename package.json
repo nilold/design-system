@@ -1,6 +1,6 @@
 {
   "name": "@ac-ui/design-system",
-  "private": true,
+  "private": false,
   "main": "src/index.scss",
   "version": "1.0.0",
   "dependencies": {
