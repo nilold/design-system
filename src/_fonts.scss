@@ -1,0 +1,97 @@
+// Avenue Code Design System v1.0.2
+// Bootstrap v4.0 Theme
+
+// This file should come BEFORE importing Bootstrap in the project. Check
+// http://getbootstrap.com/docs/4.0/getting-started/theming/ for more information
+// on how you should import this file.
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('./fonts/Overpass-regular.eot'); /* IE9 Compatibility Modes */
+  src: url('./fonts/Overpass-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('./fonts/Overpass-regular.woff2') format('woff2'), /* Modern Browsers */
+  url('./fonts/Overpass-regular.woff') format('woff'), /* Modern Browsers */
+  url('./fonts/Overpass-regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('./fonts/Overpass-italic.eot'); /* IE9 Compatibility Modes */
+  src: url('./fonts/Overpass-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('./fonts/Overpass-italic.woff2') format('woff2'), /* Modern Browsers */
+  url('./fonts/Overpass-italic.woff') format('woff'), /* Modern Browsers */
+  url('./fonts/Overpass-italic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('./fonts/Overpass-700.eot'); /* IE9 Compatibility Modes */
+  src: url('./fonts/Overpass-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('./fonts/Overpass-700.woff2') format('woff2'), /* Modern Browsers */
+  url('./fonts/Overpass-700.woff') format('woff'), /* Modern Browsers */
+  url('./fonts/Overpass-700.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('./fonts/Overpass-700-italic.eot'); /* IE9 Compatibility Modes */
+  src: url('./fonts/Overpass-700-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('./fonts/Overpass-700-italic.woff2') format('woff2'), /* Modern Browsers */
+  url('./fonts/Overpass-700-italic.woff') format('woff'), /* Modern Browsers */
+  url('./fonts/Overpass-700-italic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('./fonts/Overpass-900.eot'); /* IE9 Compatibility Modes */
+  src: url('./fonts/Overpass-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('./fonts/Overpass-900.woff2') format('woff2'), /* Modern Browsers */
+  url('./fonts/Overpass-900.woff') format('woff'), /* Modern Browsers */
+  url('./fonts/Overpass-900.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('./fonts/Overpass-300.eot'); /* IE9 Compatibility Modes */
+  src: url('./fonts/Overpass-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('./fonts/Overpass-300.woff2') format('woff2'), /* Modern Browsers */
+  url('./fonts/Overpass-300.woff') format('woff'), /* Modern Browsers */
+  url('./fonts/Overpass-300.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Overpass';
+  src: url('./fonts/Overpass-200.eot'); /* IE9 Compatibility Modes */
+  src: url('./fonts/Overpass-200.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('./fonts/Overpass-200.woff2') format('woff2'), /* Modern Browsers */
+  url('./fonts/Overpass-200.woff') format('woff'), /* Modern Browsers */
+  url('./fonts/Overpass-200.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+}
