@@ -2,7 +2,7 @@
   "name": "@ac-ui/design-system",
   "private": false,
   "main": "src/index.scss",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "dependencies": {
     "bootstrap": "4.1.3"
   }
