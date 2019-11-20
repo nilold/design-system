@@ -10,8 +10,8 @@ A SCSS design system based on Bootstrap, to provide styling and theming to all A
 
 # Installation
 1. Install as a npm dependency `npm i @ac-ui/design-system.git`
-2. Use within your SCSS 
-    - Want settings, mixins, extends, with no classes? 
+2. Use within your SCSS
+    - Want settings, mixins, extends, with no classes?
         - `@import "~@ac-ui/design-system/src/base";`
     - Want access to Bootstrap's grid classes?
         - No need to import the `required` partial!
@@ -23,13 +23,14 @@ A SCSS design system based on Bootstrap, to provide styling and theming to all A
     - `@import "~@ac-ui/design-system/src/page";`
 
 # How do variables get determined?
-- All variables should be declared in the `src/base/_theme.scss` file
+- All variables should be declared in the `src/_theme.scss` file
 - When imported in to a Product, Product variables cascade into Theme Variables
 - Theme variables cascade into Bootstrap variables
 
 # Overview
 - `src/index` -> Entry file into all component, helper, and utility styles
 - `src/page` -> Baseline page style, contains css reset, and utility classes
-- `src/base/theme` -> Baseline theme variables. Product implementation can override.
+- `src/fonts` -> Baseline font-family, contains css with font-faces styles.
+- `src/theme` -> Baseline theme variables. Product implementation can override.
 - `src/bridge/${FILE_NAME}` -> Act as a bridge file to Bootstrap, add pertinent styles
     - Each bridge file loads AC-UI Variables, and has access to all Mixins/Functions/Variables
