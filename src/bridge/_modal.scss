@@ -1,6 +1,12 @@
 @import "../base";
 @import "~bootstrap/scss/modal";
 
+.modal-dialog {
+  &:focus {
+    outline: none;
+  }
+}
+
 .modal-content {
   max-height: calc(100vh - (0.5rem * 2));
   border: none;
