@@ -12,8 +12,6 @@
 
 @each $color, $value in $colors {
   @if type-of($value) == 'color' {
-    @include bg-variant(".bg-#{$color}", $value);
-  } @else {
-    @warn ".bg-#{$color} can't be made, '#{$value}' is not a color"
+    @include bg-variant(".bg-#{$color}", $value, true);
   }
 }

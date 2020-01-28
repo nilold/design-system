@@ -15,9 +15,7 @@
 
 @each $color, $value in $colors {
   @if type-of($value) == 'color' {
-    @include text-emphasis-variant(".text-#{$color}", $value);
-  } @else {
-    @warn ".text-#{$color} can't be made, '#{$value}' is not a color"
+    @include text-emphasis-variant(".text-#{$color}", $value, true);
   }
 }
 
