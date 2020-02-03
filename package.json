@@ -7,8 +7,8 @@
   },
   "license": "MIT",
   "main": "src/index.scss",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "dependencies": {
-    "bootstrap": "4.4.1"
+    "bootstrap": "4.1.3"
   }
 }
