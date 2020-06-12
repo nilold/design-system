@@ -6,7 +6,7 @@
 //
 
 .btn {
-  border-radius: ($spacer * 3);
+  border-radius: 8px;
   padding: map-get($spacers, 3) map-get($spacers, 5);
   border-width: map-get($spacers, 1);
 
@@ -16,7 +16,7 @@
 }
 
 .btn-sm {
-  border-radius: map-get($spacers, 4);
+  border-radius: 8px;
   padding: map-get($spacers, 2) map-get($spacers, 4);
 }
 
